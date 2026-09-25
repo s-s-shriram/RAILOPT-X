@@ -1,0 +1,6 @@
+{
+  "name": "RAILOPT-X",
+  "description": "AI-Driven Multi-Department Railway Maintenance Block Optimization & Digital Twin for Indian Railways",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

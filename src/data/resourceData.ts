@@ -1,0 +1,48 @@
+import { Resource } from '../types';
+
+export const RESOURCES: Resource[] = [
+  // Engineering Teams
+  { id: 'E01', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #01 (Track Main)', baseStationId: 'ST001', availableFrom: '06:00', availableTo: '22:00', capacity: 12, specialization: 'P-Way Track Maintenance & USFD', currentStatus: 'AVAILABLE' },
+  { id: 'E02', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #02 (Turnouts)', baseStationId: 'ST003', availableFrom: '06:00', availableTo: '22:00', capacity: 10, specialization: 'Points, Crossings & Switches', currentStatus: 'AVAILABLE' },
+  { id: 'E03', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #03 (Heavy Relay)', baseStationId: 'ST025', availableFrom: '00:00', availableTo: '23:59', capacity: 15, specialization: 'Rail Renewal & Curve Realignment', currentStatus: 'AVAILABLE' },
+  { id: 'E04', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #04 (Bridge)', baseStationId: 'ST009', availableFrom: '08:00', availableTo: '18:00', capacity: 8, specialization: 'Bridge Girder & Structural Inspection', currentStatus: 'AVAILABLE' },
+  { id: 'E05', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #05 (Suburban)', baseStationId: 'ST008', availableFrom: '06:00', availableTo: '20:00', capacity: 10, specialization: 'Fast Suburban Track Maintenance', currentStatus: 'AVAILABLE' },
+  { id: 'E06', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #06 (Drainage)', baseStationId: 'ST013', availableFrom: '08:00', availableTo: '17:00', capacity: 8, specialization: 'Cess Drainage & Formation Work', currentStatus: 'AVAILABLE' },
+  { id: 'E07', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #07 (Tamping Crew)', baseStationId: 'ST017', availableFrom: '06:00', availableTo: '22:00', capacity: 14, specialization: 'Track Alignment & Mechanized Tamping', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC018' },
+  { id: 'E08', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #08 (Renigunta Hub)', baseStationId: 'ST034', availableFrom: '06:00', availableTo: '22:00', capacity: 12, specialization: 'Ghat Section & Curved Track Inspection', currentStatus: 'AVAILABLE' },
+  { id: 'E09', department: 'ENGINEERING', resourceType: 'CREW', name: 'Engineering Gang #09 (Chittoor Branch)', baseStationId: 'ST036', availableFrom: '07:00', availableTo: '19:00', capacity: 10, specialization: 'Single Line P-Way Operations', currentStatus: 'AVAILABLE' },
+
+  // S&T Teams
+  { id: 'S01', department: 'SNT', resourceType: 'CREW', name: 'S&T Signal Gang #01 (Interlocking)', baseStationId: 'ST025', availableFrom: '00:00', availableTo: '23:59', capacity: 8, specialization: 'Electronic Interlocking (EI) & Relay Logic', currentStatus: 'AVAILABLE' },
+  { id: 'S02', department: 'SNT', resourceType: 'CREW', name: 'S&T Emergency Flying Squad #02', baseStationId: 'ST009', availableFrom: '00:00', availableTo: '23:59', capacity: 6, specialization: 'Critical Signal Failure Rectification', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC012' },
+  { id: 'S03', department: 'SNT', resourceType: 'CREW', name: 'S&T Track Circuit Gang #03', baseStationId: 'ST001', availableFrom: '06:00', availableTo: '22:00', capacity: 6, specialization: 'AFTC & DC Track Circuit Testing', currentStatus: 'AVAILABLE' },
+  { id: 'S04', department: 'SNT', resourceType: 'CREW', name: 'S&T Advanced Gang #04 (Tiruvallur)', baseStationId: 'ST017', availableFrom: '06:00', availableTo: '22:00', capacity: 8, specialization: 'Point Machines & Automatic Block Signals', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC018' },
+  { id: 'S05', department: 'SNT', resourceType: 'CREW', name: 'S&T Axle Counter Squad #05', baseStationId: 'ST034', availableFrom: '07:00', availableTo: '21:00', capacity: 6, specialization: 'High-Speed Digital Axle Counters (DAC)', currentStatus: 'AVAILABLE' },
+  { id: 'S06', department: 'SNT', resourceType: 'CREW', name: 'S&T Telecomm & OFC Gang #06', baseStationId: 'ST003', availableFrom: '08:00', availableTo: '18:00', capacity: 5, specialization: 'Optical Fiber Cable & Train Radio (VHF)', currentStatus: 'AVAILABLE' },
+
+  // Traction Teams
+  { id: 'T01', department: 'TRACTION', resourceType: 'CREW', name: 'Traction Line Gang #01 (Arakkonam Depot)', baseStationId: 'ST025', availableFrom: '00:00', availableTo: '23:59', capacity: 10, specialization: 'OHE Section Insulators & Neutral Sections', currentStatus: 'AVAILABLE' },
+  { id: 'T02', department: 'TRACTION', resourceType: 'CREW', name: 'Traction Line Gang #02 (Basin Bridge)', baseStationId: 'ST002', availableFrom: '06:00', availableTo: '22:00', capacity: 8, specialization: 'Terminal Complex Catenary Wire Tuning', currentStatus: 'AVAILABLE' },
+  { id: 'T03', department: 'TRACTION', resourceType: 'CREW', name: 'Traction Substation Crew #03', baseStationId: 'ST009', availableFrom: '07:00', availableTo: '19:00', capacity: 6, specialization: 'TSS Transformers, CBs & SCADA', currentStatus: 'AVAILABLE' },
+  { id: 'T04', department: 'TRACTION', resourceType: 'CREW', name: 'Traction Line Gang #04 (Ghat Corridor)', baseStationId: 'ST034', availableFrom: '06:00', availableTo: '22:00', capacity: 9, specialization: 'High Wind Catenary Stagger & Tension', currentStatus: 'AVAILABLE' },
+  { id: 'T05', department: 'TRACTION', resourceType: 'CREW', name: 'Traction Specialist Gang #05 (Tiruvallur)', baseStationId: 'ST017', availableFrom: '06:00', availableTo: '22:00', capacity: 10, specialization: 'OHE Contact Wire Replacement & Isolators', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC018' },
+
+  // Heavy Equipment & Machinery
+  { id: 'TM01', department: 'ENGINEERING', resourceType: 'TRACK_MACHINE', name: 'Plasser 08-32 Duomatic Tamping Machine', baseStationId: 'ST025', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'Plain Track High-Output Tamping', currentStatus: 'AVAILABLE' },
+  { id: 'TM02', department: 'ENGINEERING', resourceType: 'TRACK_MACHINE', name: 'Unimat 4S Turnout Tamping Machine', baseStationId: 'ST017', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'Points & Crossings Alignment', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC018' },
+  { id: 'TM03', department: 'ENGINEERING', resourceType: 'TRACK_MACHINE', name: 'Continuous Action Tamper CSM-960', baseStationId: 'ST003', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'High Speed Quadruple Section Tamping', currentStatus: 'AVAILABLE' },
+  { id: 'BCM01', department: 'ENGINEERING', resourceType: 'HEAVY_EQUIPMENT', name: 'Ballast Cleaning Machine RM-80', baseStationId: 'ST025', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'Cushion Screening & Deep Ballast Clean', currentStatus: 'AVAILABLE' },
+  { id: 'BRM01', department: 'ENGINEERING', resourceType: 'HEAVY_EQUIPMENT', name: 'Ballast Regulating Machine USP-2000', baseStationId: 'ST017', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'Ballast Profiling & Shoulder Dressing', currentStatus: 'AVAILABLE' },
+
+  // Tower Wagons
+  { id: 'TW01', department: 'TRACTION', resourceType: 'TOWER_WAGON', name: '8-Wheeler Self-Propelled Tower Wagon #01', baseStationId: 'ST025', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'High Reach OHE Inspection & Wire Stringing', currentStatus: 'AVAILABLE' },
+  { id: 'TW02', department: 'TRACTION', resourceType: 'TOWER_WAGON', name: '4-Wheeler Maintenance Tower Wagon #02', baseStationId: 'ST002', availableFrom: '06:00', availableTo: '22:00', capacity: 1, specialization: 'Suburban Yard OHE Overhaul', currentStatus: 'AVAILABLE' },
+  { id: 'TW03', department: 'TRACTION', resourceType: 'TOWER_WAGON', name: '8-Wheeler Heavy Tower Wagon #03', baseStationId: 'ST017', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'Catenary Wire Replacement & Tensioning', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC018' },
+  { id: 'TW04', department: 'TRACTION', resourceType: 'TOWER_WAGON', name: 'Self-Propelled Tower Car #04', baseStationId: 'ST034', availableFrom: '06:00', availableTo: '22:00', capacity: 1, specialization: 'Ghat Section Steep Gradient OHE Patrol', currentStatus: 'AVAILABLE' },
+
+  // S&T Test Kits & Diagnostic Trolleys
+  { id: 'STK-01', department: 'SNT', resourceType: 'SIGNAL_TEST_KIT', name: 'Automated Signal Test Kit STK-01', baseStationId: 'ST017', availableFrom: '06:00', availableTo: '22:00', capacity: 1, specialization: 'Logic Analyzer & Microprocessor Interlocking', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC018' },
+  { id: 'STK-02', department: 'SNT', resourceType: 'SIGNAL_TEST_KIT', name: 'Emergency Mobile Signal Rig STK-02', baseStationId: 'ST009', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'Rapid Fail-Safe Relay & Loop Tester', currentStatus: 'AVAILABLE', assignedSectionId: 'SEC012' },
+  { id: 'STK-03', department: 'SNT', resourceType: 'SIGNAL_TEST_KIT', name: 'Electronic Interlocking Analyzer STK-03', baseStationId: 'ST025', availableFrom: '00:00', availableTo: '23:59', capacity: 1, specialization: 'Multi-aspect Color Light Calibration', currentStatus: 'AVAILABLE' },
+  { id: 'STK-04', department: 'SNT', resourceType: 'SIGNAL_TEST_KIT', name: 'Axle Counter Diagnostic Meter STK-04', baseStationId: 'ST001', availableFrom: '06:00', availableTo: '22:00', capacity: 1, specialization: 'Phase Angle & Carrier Frequency Check', currentStatus: 'AVAILABLE' },
+];
